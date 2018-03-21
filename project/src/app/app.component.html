@@ -1,0 +1,20 @@
+
+<!-- <div *ngIf="img">
+  <ul>
+    <li *ngFor="let image of imgPack.hits">
+      <img src="{{image.webformatURL}}" />
+    </li>
+  </ul>
+</div> -->
+
+<ul id="infinite-scroller"
+    appInfinitScroll
+    scrollPer="90"
+    autoCall="true"
+    [scrollCall]="scrollCall"
+  >
+    <li *ngFor="let item of imgPack">{{item.id}}
+      <!-- <img src="{{item.webformatURL}}" /> -->
+    </li>
+</ul>
+
